@@ -1,0 +1,254 @@
+/* @import url() */
+
+library{color:#1ABC9C
+#2ECC71
+#3498DB
+#9B59B6
+#34495E
+#F1C40F
+#E67E22
+#E74C3C
+#95A5A6
+#FFFFFF
+#FF00FF
+#00FF00
+#FFA500
+#00BFFF
+#FFDB58
+ #FF9933
+#808000
+#008080
+}
+
+
+
+:root{
+   --main-color:#924A56;
+   --main-dark:#462445;
+   --main-yellow:#DDA749;
+   --sec-dark:#34495E;
+   --white:#ffffff;
+   --text-grey:rgba(0,0,0,0.5);
+}
+
+*{
+   padding:0;
+   margin:0;
+   /* box-sizing:border-box; */
+   list-style-type:none;
+   text-decoration:none;
+   /* outline:none; */
+   font-family:'inter',sans-serif;
+   /* border: 1px black;  */
+   /* border-style: solid; */
+   }
+   
+html{
+      scroll-behavior:smooth;
+   }
+
+header{
+      position:absolute;
+      right: 0;
+      left: 0;
+      z-index:10;
+      display:flex;
+      padding:1rem 2rem;
+      background:var(--main-dark);
+      display:flex;
+      justify-content: space-between;}
+   
+.btn
+   {font-family: 'DM Sans',sans-serif;
+   padding:1rem 2rem;
+   border-radius:18px;}
+
+header h2{
+   display: flex;
+   align-items:center;
+   color: #ffffff;
+}
+
+.logo-icon{
+   height: 40px;
+   width:40px;
+   border-radius: 50%;
+   background-color: var(--main-color);
+   color:#ffffff;
+   display:inline-block;
+   margin: right 0.5rem;
+   display: grid;
+   place-content: center;
+   }
+
+.logo-icon>span{
+   color:#ffffff;
+   font-size: 1.4rem;
+}
+   
+header ul{display: flex;}
+
+header li{
+   margin-right: 1rem;
+}
+
+header a{
+   color: var(--white);
+   display:block;
+   padding-bottom: .5rem;
+   padding:0rem .1rem .5rem .1rem
+}
+header a.active{
+   color:var(--main-yellow)
+}
+.more-links a{
+   background: var(--main-color);
+   color:#ffffff
+}
+
+.hero{  
+   min-height: 100vh;
+   display: flex;
+   align-items: flex-end;
+   background: var(--main-color);
+}
+.hero-flex{
+   /* padding: */
+   width: 80%;
+margin:auto;
+display:flex;
+justify-content: flex-end;
+}
+
+.hero-desc{
+   align-items: center;
+}
+
+.hero-desc h1{
+   font-size: 3rem;
+   color:var(--white);
+   letter-spacing:2px;
+}
+
+.hero-desc h1 span{
+   color:var(--main-yellow);
+   font-size:3rem;
+   margin-bottom: 1rem;
+}
+
+.hero-desc p{margin:2rem 0rem;
+color:rgba(255,255,255,0.5);
+font-size: 1rem;
+line-height: 1.3rem;}
+
+
+/* buttons */
+.hero-btns{
+   margin-bottom: 3rem;
+   display: flex;
+   align-items: center;
+}
+
+.hero-btns a{
+      font-family: 'DM sans',sans-serif;
+   font-size: 1.1rem;
+   display: flex;
+   align-items: center;
+}
+
+.hero-btns a span{ 
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: .5rem;
+}
+
+.hero-btns a:first-child{
+   background:var(--main-yellow);
+   color: #FFFFFF;
+   display: inline-block;
+   margin-right:1.5rem;
+   padding: 1.3rem 1rem;
+}
+
+.hero-btns a:first-child:hover{
+   background:#FFFFFF;
+   color:var(--main-color)
+}
+
+.hero-btns a:last-child{
+   padding: 1.3rem 1rem;
+   color:#FFFFFF
+}
+
+.hero-btns a:last-child span{
+  transform: rotate(45deg);
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-left: .5rem;
+  margin-top: .8rem;
+
+}
+
+.hero-btns:hover,
+.hero-btns:focus {
+  opacity: .75;
+}
+
+
+/* job tittle */
+.job-title{
+   color:var(--white);
+   display: flex;
+align-items: center;
+margin-bottom: 1rem;}
+
+.job-title span{
+   width: 100px;
+   height: 1px;
+   background:var(--white);
+   margin-right: 1rem;
+   margin-top:.5rem;
+}
+
+.job-title h3{
+ font-weight: 400;
+   color:var(--white);
+   font-size: 1.3rem;
+}
+
+.hero-img{
+   display:flex;
+   align-items: flex-end;
+   justify-content: flex-end;
+    position: relative;
+}
+
+img{width:100%}
+
+.hero-img-inner>img{
+   width:80%;
+margin-bottom:-6px ;}
+
+.welcome{
+   position:absolute;
+   right: 0px;
+   top: 55%;;
+   height: 150px;
+   width: 150px;
+}
+.welcome-inner{
+   position: relative;}
+
+.welcome-inner img{
+  /* animation:rotateObj 5s infinite linear;} */}
+
+@keyframes rotateObj{
+   0% {transform: rotate(360deg)}
+
+}
+.welcome-inner span{position: absolute;
+top:40%;
+left: 40%;
+font-size: 2rem;
+color:#fff;
+transform:translate(-40% -40%)}
