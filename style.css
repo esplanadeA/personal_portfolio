@@ -332,4 +332,10 @@ font-size: 2rem;
 color:#fff;
 transform:translate(-40% -40%)}
 
-
+/* Skills */
+.area{
+   min-height: 100vh;
+   display: flex;
+   align-items: flex-end;
+   background: var(--main-color);
+}
