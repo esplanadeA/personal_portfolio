@@ -335,7 +335,24 @@ transform:translate(-40% -40%)}
 /* Skills */
 .area{
    min-height: 100vh;
+   /* background: var(--main-color); */
+}
+.container{
+   width: 80%;
+   margin: auto;
+   margin-top: 3rem;
+}
+
+/* .area-desc{margin-top: 3rem;} */
+
+.skill-labels-wrapper{
    display: flex;
-   align-items: flex-end;
-   background: var(--main-color);
+   /* flex-wrap: wrap; */
+   justify-content: space-between;
+}
+
+.front-end-icon-wrap{
+   width: 100%;
+   display: flex;
+    flex-wrap: wrap;
 }
