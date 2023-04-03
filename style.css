@@ -393,3 +393,140 @@ margin: auto;
 .icon-wrap>span{
    margin:0.5rem;
 }
+
+/* Timeline feature */
+
+.timeline-diagram-container>h1{
+   color:#FFf;
+   font-weight: 700;
+   margin-top: 1rem;
+   text-align: center;
+   letter-spacing: normal;
+   text-transform: uppercase;
+}
+
+.process-wrapper{
+   margin: auto;
+   max-width: 1080px;
+}
+
+#progress-bar-container{
+   position: relative;
+   width: 90%;
+   margin: auto;
+   height:6rem;
+   margin-top: 4rem;
+}
+
+#progress-bar-container ul{
+   margin: 0;
+   padding: 0;
+   padding-top: 1rem;
+   z-index:9999;
+   position: absolute;
+   width:100%;
+   margin-top:-40px ;
+}
+
+#progress-bar-container li:before{
+  content:"";
+  display:block;
+  margin:auto;
+  width:15px;
+  height: 15px;
+  border-radius: 50%;
+  border: solid 2px #FFFFFF;
+  transition:all ease 0.3s ;
+}
+
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover:before{
+   background:deeppink
+}
+
+#progress-bar-container li:after{
+   content:'';
+   display: block;
+   width: 5px;
+   height: 5px;
+   background:#777;
+   margin:auto;
+   border:solid 7px white;
+   border-radius: 50%;
+   margin-top: 40px;
+   box-shadow:0 2px 13px -1px rgba(0,0,0,0.5) ;
+   transition: all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after{
+   background-color: deeppink;
+}
+
+#progress-bar-container li.active:after{
+   background-color: deeppink;
+}
+
+#progress-bar-container li{
+  list-style: none;
+  float:left;
+  width:14%;
+  text-align: center;
+  color:#aaa;
+  text-transform: uppercase;
+  font-size: 8px;
+  cursor:pointer;
+  font-weight: 500;
+  transition: all ease 0.2s;
+  vertical-align: bottom;
+  height: 50px;
+  position: relative;
+}
+
+#progress-bar-container li .step-inner{   
+   position:absolute;
+   width: 100%;
+   /* bottom:0; */
+   /* font-size:14px; */
+
+}
+
+#progress-bar-container #line{
+   width: 90%;
+   margin: auto;
+   background: #eee;
+   height: 6px;
+   position:absolute;
+   z-index: 1;
+   left:7%;
+   top: 42px;
+   border-radius: 50px;
+   transition: all ease 0.9s;
+}
+
+#progress-bar-container #line-process{
+   content: '';
+   width: 3%;
+   height: 100%;
+   background: deeppink;
+   background: deepskyblue;
+   position: absolute;
+   z-index: 2;
+   border-radius: 50px;
+   transition: all ease 0.9s;
+}
+
+#progress-content-section{
+   width: 75%;
+   margin:auto;
+   background:  #C22A53;
+   border-radius: 1rem;
+   /* padding: 30px; */
+
+}
+
+#progress-content-section .section-content{
+   padding:30px 40px;
+   text-align: center;
+   margin:2rem;;
+   text-align:center;
+}
