@@ -32,7 +32,7 @@ library{color:#1ABC9C
 :root{
    --main-color:#0D1219;
    --main-dark:#265960;
-   --main-yellow:#C22A53;
+   --main-pink:#C22A53;
    --sec-dark:#223934;
    --white:#ffffff;
    --text-grey:rgba(0,0,0,0.5);
@@ -69,7 +69,7 @@ header{
    font-family: 'DM Sans',sans-serif;
    padding:1rem 1.5rem;
    border-radius:18px;
-   background: var(--main-yellow);
+   background: var(--main-pink);
    }
 
 header h2{
@@ -108,7 +108,7 @@ header a{
    padding:0rem .1rem .5rem .1rem
 }
 header a.active{
-   color:var(--main-yellow)
+   color:var(--main-pink)
 }
 .more-links a{
    background: var(--main-color);
@@ -145,7 +145,7 @@ justify-content: flex-end;
 }
 
 .hero-desc h1 span{
-   color:var(--main-yellow);
+   color:var(--main-pink);
    font-size:3rem;
    margin-bottom: 1rem;
 }
@@ -179,7 +179,7 @@ line-height: 1.3rem;}
 }
 
 .hero-btns a:first-child{
-   background:var(--main-yellow);
+   background:var(--main-pink);
    color: #FFFFFF;
    display: inline-block;
    margin-right:1.5rem;
@@ -303,7 +303,7 @@ margin-bottom:-6px ;}
    display: grid;
    place-content: center;
    border-radius: 50%;
-   background:var(--main-yellow);
+   background:var(--main-pink);
 }
 /* welcome */
 
@@ -405,6 +405,7 @@ margin: auto;
    text-transform: uppercase;
 }
 
+/* progress bar */
 .process-wrapper{
    margin: auto;
    max-width: 1080px;
@@ -414,7 +415,7 @@ margin: auto;
    position: relative;
    width: 90%;
    margin: auto;
-   height:6rem;
+   height:5rem;
    margin-top: 4rem;
 }
 
@@ -439,33 +440,6 @@ margin: auto;
   transition:all ease 0.3s ;
 }
 
-#progress-bar-container li.active:before,
-#progress-bar-container li:hover:before{
-   background:deeppink
-}
-
-#progress-bar-container li:after{
-   content:'';
-   display: block;
-   width: 5px;
-   height: 5px;
-   background:#777;
-   margin:auto;
-   border:solid 7px white;
-   border-radius: 50%;
-   margin-top: 40px;
-   box-shadow:0 2px 13px -1px rgba(0,0,0,0.5) ;
-   transition: all ease 0.2s;
-}
-
-#progress-bar-container li:hover:after{
-   background-color: deeppink;
-}
-
-#progress-bar-container li.active:after{
-   background-color: deeppink;
-}
-
 #progress-bar-container li{
   list-style: none;
   float:left;
@@ -487,11 +461,37 @@ margin: auto;
    width: 100%;
    /* bottom:0; */
    /* font-size:14px; */
+}
 
+#progress-bar-container li.active:before,
+#progress-bar-container li:hover{
+   background:var(--main-pink)
+}
+
+#progress-bar-container li:after{
+   content:'';
+   display: block;
+   width: 5px;
+   height: 5px;
+   background:#777;
+   margin:auto;
+   border:solid 7px white;
+   border-radius: 50%;
+   margin-top: 40px;
+   box-shadow:0 2px 13px -1px rgba(0,0,0,0.5) ;
+   transition: all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after{
+   background-color: var(--main-pink);
+}
+
+#progress-bar-container li.active:after{
+   background-color: var(--main-pink);
 }
 
 #progress-bar-container #line{
-   width: 90%;
+   width: 85%;
    margin: auto;
    background: #eee;
    height: 6px;
@@ -505,28 +505,67 @@ margin: auto;
 
 #progress-bar-container #line-process{
    content: '';
-   width: 3%;
+   width: 0%;
    height: 100%;
-   background: deeppink;
-   background: deepskyblue;
+   background:var(--main-pink);
    position: absolute;
    z-index: 2;
    border-radius: 50px;
    transition: all ease 0.9s;
 }
 
+
 #progress-content-section{
    width: 75%;
    margin:auto;
-   background:  #C22A53;
+   background:  var(--main-pink);
    border-radius: 1rem;
    /* padding: 30px; */
 
 }
 
 #progress-content-section .section-content{
-   padding:30px 40px;
+   padding:15px 30px;
    text-align: center;
-   margin:2rem;;
    text-align:center;
+}
+
+
+#progress-content-section .section-content h2 {
+	font-size:16px;
+	text-transform:uppercase;
+	color:#fff;
+	letter-spacing:1px;
+   font-weight: 400;
+}
+
+#progress-content-section .section-content p {
+	font-size:12px;
+	line-height:1.8em;
+	color:#FFf;
+   font-weight: 250
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
 }
