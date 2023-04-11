@@ -39,3 +39,19 @@ $(document).ready(function () {
     $('.present').addClass('active').siblings().removeClass('active')
   })
 })
+
+// header
+$(document).ready(function () {
+  var header = $('header')
+  var headerOffset = header.offset().top
+
+  $(window).scroll(function () {
+    var scrollPos = $(window).scrollTop()
+
+    if (scrollPos >= headerOffset) {
+      header.addClass('fixed')
+    } else {
+      header.removeClass('fixed')
+    }
+  })
+})

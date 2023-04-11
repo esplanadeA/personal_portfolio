@@ -55,15 +55,17 @@ html{
    }
 
 header{
-      position:relative;
+      position:fixed;
       right: 0;
       left: 0;
       z-index:10;
       display:flex;
-      padding:1rem 2rem;
+      padding:1rem 2rem  0 2rem;
       background:var(--main-dark);
       display:flex;
-      justify-content: space-between;}
+      justify-content: space-between;
+      z-index: 999;
+      }
    
 .btn{
    font-family: 'DM Sans',sans-serif;
@@ -341,7 +343,7 @@ transform:translate(-40% -40%)}
    color:#FFFFFF;
    width: 80%;
    margin: auto;
-   margin-top: 3rem;
+   padding-top: 2rem;
 }
 
 /* .area-desc{margin-top: 3rem;} */
@@ -569,3 +571,136 @@ margin: auto;
 		opacity:1;
 	}
 }
+
+/* Projects */
+
+.portfolio{
+   min-height: 100vh;
+   background: var(--main-color);
+   overflow: hidden;
+   padding: 5rem;
+   position: relative;
+}
+.portfolio-project-wrapper{
+   width:50%;
+   margin:auto;
+}
+
+.portfolio-project-wrapper>h2{
+   font-size: 30px;
+   font-weight:700;
+   text-align: center;
+   margin-bottom: 40px;
+   text-transform: capitalize;
+   color: #e5e3e3;
+}
+
+.project-slider{
+   /* padding:0 10vw; */
+   overflow: auto;
+   scroll-behavior: smooth;
+   display:flex;
+}
+
+.project-slider::-webkit-scrollbar{
+   display:none
+
+}
+
+.project{
+   flex:0 0 auto;
+   width:250px;
+   height: 450px;
+   margin-right:40px
+}
+
+.project-image{
+   position: relative;
+   width:100%;
+   height: 350px;
+   overflow: hidden;
+
+}
+
+.project-thumb{
+   width: 100%;
+   height:400px;
+   object-fit: cover;
+}
+
+.infor{
+   position:absolute;
+   background:#FFf;
+   padding:5px;
+   border-radius: 0.2rem;
+   color:var(--main-pink);
+   right:10px;
+   top:10px;
+   font-weight: 500;
+}
+
+.infor:hover{
+   background:var(--main-pink);
+   color:#FFf;
+}
+
+.project-desc{
+   width: 100%;
+   height: 100%;
+   padding-top: 10px;
+   font-size: medium;
+   color:#FFFFFF
+}
+
+.project-title{
+   text-transform: uppercase;
+}
+
+.project-short-description{
+   width: 100%;
+   line-height: 20px;
+   overflow: hidden;
+   opacity: 0.5;
+   text-transform: capitalize;
+   margin:5px 0; 
+   font-size: 12px
+}
+
+.nxt-btn,.pre-btn{
+   border:none;
+   width:1vw;
+   height: 100%;
+   position:absolute;
+   top:0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background:var(--main-color);
+   cursor:pointer;
+   z-index:9;
+   object-fit: fill;
+   margin:0 10rem 0 10rem;
+}
+
+button>img{
+   display: block;
+   height: 30px;
+   width: 30px;
+}
+
+.pre-btn{
+   left:0;
+   }
+
+.nxt-btn{
+   right:0;
+}
+
+.pre-btn img, .nxt-btn img{
+   opacity: 0.2;
+}
+
+.pre-btn:hover img,
+ .nxt-btn:hover img{
+   opacity: 1;
+ }
