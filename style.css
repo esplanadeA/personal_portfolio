@@ -46,8 +46,8 @@ library{color:#1ABC9C
    text-decoration:none;
    /* outline:none; */
    font-family:'inter',sans-serif;
-   border: 1px black; 
-   border-style: solid;
+   /* border: 1px black; 
+   border-style: solid; */
    }
    
 html{
@@ -62,7 +62,6 @@ header{
       display:flex;
       padding:1rem 2rem  0 2rem;
       background:var(--main-dark);
-      display:flex;
       justify-content: space-between;
       z-index: 999;
       }
@@ -799,5 +798,31 @@ li>span{
   color:var(--main-pink)
 }
 
+/* footer */
 
+footer{
+background: var(--main-color);
+}
+
+
+footer .logo{
+   display: flex;
+   flex-direction: row;
+}
+.footer-logo {
+  display: flex;
+}
+
+footer h2{
+   display: flex;
+   align-items:center;
+   color: #ffffff;
+}
+
+footer >div span{
+   display: flex;
+   align-items:center;
+   color: #ffffff;
+   justify-content: space-evenly;
+}
 
