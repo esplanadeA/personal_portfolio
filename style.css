@@ -730,6 +730,11 @@ background: var(--main-color);
    padding:200px;
 }
 
+li>span{
+   color:#ffffff;
+   font-size: 1.4rem;
+   display:inline-block;
+}
 
 #contact h2, #feedback-form h2 {
   font-size: 32px;
@@ -793,3 +798,6 @@ background: var(--main-color);
   background-color: #FFFFFF;
   color:var(--main-pink)
 }
+
+
+
