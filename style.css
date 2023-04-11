@@ -704,3 +704,100 @@ button>img{
  .nxt-btn:hover img{
    opacity: 1;
  }
+
+ /* contact */
+
+ #contact, #feedback-form {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin: 50px 2.5%;
+  text-align: center;
+  color:#FFFFFF;
+  text-align: left;
+  background: var(--sec-dark);
+  padding: 30px;
+  border-radius: 1rem;
+}
+
+.contact-information{
+min-height: 100vh;
+background: var(--main-color);
+}
+
+.contact-container{
+   display: flex;
+   padding:200px;
+}
+
+li>span{
+   color:#ffffff;
+   font-size: 1.4rem;
+   display:inline-block;
+}
+
+#contact h2, #feedback-form h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#contact li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#contact li i {
+  margin-right: 10px;
+  font-size: 24px;
+}
+
+#feedback-form form {
+  display: inline-block;
+  text-align: left;
+}
+
+#feedback-form form div {
+  margin-bottom: 10px;
+}
+
+#feedback-form form label {
+  display: inline-block;
+  width: 100px;
+  font-weight: bold;
+}
+
+#feedback-form form input,
+#feedback-form form textarea {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#feedback-form form button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--main-pink);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#feedback-form form button:hover {
+  background-color: #FFFFFF;
+  color:var(--main-pink)
+}
+
+
+
