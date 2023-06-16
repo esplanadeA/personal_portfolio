@@ -58,18 +58,19 @@ header{
       position:fixed;
       right: 0;
       left: 0;
-      z-index:10;
       display:flex;
       padding:1rem 2rem  0 2rem;
       background:var(--main-dark);
       justify-content: space-between;
-      z-index: 999;
+      z-index: 9999;
+      align-items: center;
       }
    
 .btn{
    font-family: 'DM Sans',sans-serif;
-   padding:1rem 1.5rem;
-   border-radius:18px;
+   padding:1rem;
+   margin:1rem;
+   border-radius:10px;
    background: var(--main-pink);
    }
 
@@ -410,6 +411,8 @@ margin: auto;
 .process-wrapper{
    margin: auto;
    max-width: 1080px;
+    position: relative; 
+  z-index: 1; 
 }
 
 #progress-bar-container{
@@ -418,6 +421,7 @@ margin: auto;
    margin: auto;
    height:5rem;
    margin-top: 4rem;
+   z-index: 2;
 }
 
 #progress-bar-container ul{
